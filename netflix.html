@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .fundo {
+            position: relative;
+            z-index: -1;
+            height: 90vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: transparent;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+        }
+
+        header>img {
+            width: 175px;
+            z-index: 1;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        article>h1 {
+            font-size: 5vw;
+            padding-bottom: 10px;
+        }
+
+        article>p {
+            padding: 5px;
+        }
+
+        .inscricao>button {
+            background-color: rgb(177, 16, 16);
+            padding: 10px 40px;
+            margin-top: 40px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.3em;
+
+        }
+
+        .inscricao>button:hover {
+            background-color: rgb(218, 21, 21);
+        }
+
+        .inscricao>input {
+            padding: 15px 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.199);
+            border: 1px solid gray;
+            color: white;
+            display: inline-block;
+        }
+
+        aside {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        aside h2 {
+            font-size: 2.5em;
+        }
+
+        aside > h2,p {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        aside iframe {
+            padding-bottom: 200px;
+        }
+
+        .carrocel {
+            display: flex;
+            padding: 30px;
+            background-color: rgb(3, 3, 3);
+            overflow-x: auto;
+        }
+
+        .carrocel #primeiro {
+            padding-left: 20px;
+        }
+
+        .carrocel img {
+            width: 400px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/download-removebg-preview (6).png" alt="">
+        </header>
+        <main>
+            <article>
+                <h1>Filmes, séries e muito mais, sem limites</h1>
+                <p>
+                    A partir de R$ 20,90. Cancele quando quiser.
+                </p>
+                <p>
+                    Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+                </p>
+                <form class="inscricao">
+                    <input type="email" placeholder="email">
+                    <button>Click aqui</button>
+                </form>
+            </article>
+            <img src="assets/Design sem nome (1).png" alt="" class="fundo">
+            <aside>
+                <div class="conteudo">
+                    <h2>Filme mais esperado do ano</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="video">
+                    <iframe width="500" height="300" src="https://www.youtube.com/embed/TXPkr5HcvBs?si=sTakxEqi1_llm3QJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </aside>
+            <section class="carrocel">
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/W5LPcpIRLzs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqr8vRAymmemJv4T4a-D_7c2nubg"
+                        alt="" id="primeiro"></a>
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/_BTxz9OkvzQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBLZdgPKtry6i6SunCJN6ldumd8Cw"
+                        alt=""></a>
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/WIbQyNRNs18/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBu2YI7aRCCCmVMj6rbuBTEPA0AIw"
+                        alt=""></a>
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/k5RUngL_HUg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPv0WK0MWvGqRLOekKaLAx-gpFvQ"
+                        alt=""></a>
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/P4vrRU3Lb64/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlrwN6QRtn-rKnoAbZfoMN7oMe2Q"
+                        alt=""></a>
+                <a href=""><img
+                        src="https://i.ytimg.com/vi/uIVKT3Irc7o/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAptQ0HcbbV_bZ7TAYdyeEf8X7hdA"
+                        alt=""></a>
+            </section>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
